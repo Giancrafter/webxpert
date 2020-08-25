@@ -7,15 +7,46 @@ body {
   align-items: center;
 }
 .navbar img{
-  padding-right: 20px;
+  margin-right: 20px;
 }
 .nav-items{
   display: flex;
   list-style: none;
-  margin-left: auto
-
+  margin-left: auto;
 }
 .nav-items li{
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (max-width: 650px) {
+  .navbar{
+    justify-content: center;
+  }
+  .nav-items {
+    display: block;
+    margin-left: -40px ;
+    width: 100%;
+
+  }
+  .nav-items li{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+  }
+  .nav-items li:first-child{
+        border-top: 1px solid grey;
+  }
+}
+
+
+
+
+.banner {
+  display: flex;
+  min-height: 200px;
+  background-color: #ccc;
+  justify-content: center;
+  align-items: center;
 }
